@@ -8,22 +8,81 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">title</h1>
-    <p id="description">explanation</p>
-    <form id="survey-form" action="post">
-         <input type="text" id="name" placeholder="name" required/> <label id="name-label"> name </label>
-         <input type="email" id="email" placeholder="email" required><label id="email-label"> email </label>
-         <input type="number" id="number" min='0' max='20' placeholder="number"><label id="number-label"> number</label>
-         <select id="dropdown">
-            <option>m</option>
-            <option>f</option>
-         </select>
-         <input type="radio" id="name2" name="m" value="male">male
-         <input type="radio" id="name3" name="m" value="female">female
-         <input type="checkbox" name="check1" value="1">
-         <input type="checkbox" name="check2" value="2">
-         <textarea placehoder="comment"rows="4" cols="50"> </textarea>
-         <button value="submit" id="submit"><label> submit</label>
-    </form>
+    <h1 id="title">Title</h1>
+    <p id="description">Here is the sample form that you need to fill it out</p>
+    <div class="container"> 
+        <form id="survey-form" action="post">
+            <div class="row">
+                <div class="col-25">
+                    <label id="name-label"> name </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" placeholder="name" required/>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="email-label"> email </label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" placeholder="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="number-label"> number</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="number" min='0' max='20' placeholder="number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="select"> Age</label>
+                </div>
+                <div class="col-75">
+                    <select id="dropdown">
+                        <option> Above 25</option>
+                        <option> 25</option>
+                     </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="age"> Gender</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="ag1" name="25" value="above">male
+                    <input type="radio" id="ag2" name="25" value="below">female Below
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label id="check"> Checkbox</label>
+                </div>
+                <div class="col-75">
+                    
+                </div>
+                <input type="checkbox" name="check1" value="1">
+                <input type="checkbox" name="check2" value="2">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="com"> comment</label>
+                </div>
+                <div class="col-75">
+                    <textarea placehoder="Write somthing"rows="4" cols="50"> </textarea>
+                </div>
+
+            </div>
+            <div class="row">
+                <button value="submit" id="submit"><label> submit</label>
+            </div>
+            
+           
+        </form>
+    </div>
+    
 </body>
 </html>
